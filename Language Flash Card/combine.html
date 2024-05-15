@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/png" href="flashcard.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="./power.png" type="image/x-icon">
+  <title>Flashcards</title>
+</head>
+<body>
+
+  <main>
+    
+    <header>
+      <div class="container">
+        <div id="header">
+          <h1>Flashcards</h1>
+          <div>
+            <button id="show_card_box">Add Card</button>
+            <button id="delete_cards">Del Cards</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    
+    <section>
+      <div class="container">
+        <div id="create_card">
+          <h2>Create Flashcard</h2>
+          <label for="from">From :</label>
+          <ul>
+              <select ></select>
+          </ul>
+          <label for="question">Word</label>
+          <textarea id="question" class="fromText" maxlength="280"></textarea>
+          <label for="meaning">meaning</label>
+          <textarea id="meaning"  maxlength="280"></textarea>
+          <label for="to">To : </label>
+          <ul>
+              <select ></select>
+          </ul>
+          <label for="answer" maxlength="280">Answer</label>
+          <br>
+          <textarea id="answer" class="toTranslate"></textarea>
+          <div>
+            <button id="save_card">Save</button> <button id="close_card_box">Close</button> 
+            <button class="from">Word</button>
+            <button class="to">Translator</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div id="flashcards"></div>
+      </div>
+    </section>
+
+  </main>
+  
+  <script src="./script.js"></script>
+</body>
+</html>
